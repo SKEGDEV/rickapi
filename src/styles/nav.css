@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+*{
+	font-family: 'Dongle', sans-serif;
+}
+
+header {
+	display:flex;
+	flex-direction: row;
+	width: 100%;
+	height: 55px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+header .nav-logo{
+	width: 120px;
+	margin-left: 30px;
+}
+
+header .rick-nav-menu{
+	display:flex;
+	flex-direction: row;
+	margin-left: 55%;
+	margin-top: 18px;
+	list-style: none;
+}
+
+header .rick-nav-menu li{
+	margin-left: 20px;
+}
+
+header .rick-nav-menu li button{
+	height: 55px;
+	transform: translateY(-16px);
+	width: 70px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+header .rick-nav-menu .clicked{
+	border-bottom: 4px solid;
+	border-color: #10b0c9;
+	color: #10b0c9;
+
+}
+
+header .rick-nav-menu li button:hover{
+	border-bottom: 4px solid;
+	border-color: #10b0c9;
+	color: #10b0c9;
+}
+
+header .input{
+	margin-left: 20px;
+}
+
+header .input input{
+	width: 180px;
+	height: 30px;
+	font-size: 20px;
+	transition: all 0.5s ease-in-out;
+	margin-top: 10px;
+	outline: none;
+	border-radius:5px;
+}
+
+header .input p{
+	transform: translateY(-49px);
+	margin-left: 5px;	
+	transition: all 0.5s ease-in-out;
+}
+
+header .input input:focus ~p{
+	transform: translateY(-67px);
+	font-size: 13px;
+	width: 85px;
+}
+
+header .input input:focus{
+	height: 45px;
+	margin-top: 2px;
+	border: 2px solid;
+	border-color: #10b0c9;
+}
+
+@media only screen and (max-width: 1000px){
+	header .rick-nav-menu{
+		margin-left: 40%;
+	}
+
+}
+
+@media only screen and (max-width:770px){
+	header .rick-nav-menu{
+		flex-direction: column;
+		margin-left: 0%;
+		height: 0px;
+		overflow-y: hidden;
+		margin-top: 59px;
+		width: 95%;
+		margin-left: 2.5%;
+		background-color: white;
+		position: absolute;
+		text-align: center;
+		transition: all 0.5s ease-in-out;
+	}
+
+	header .rick-nav-menu li{
+		margin-bottom: 50px;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	header .burger{
+		margin-left:63%;
+		transition: all 0.5s ease-in-out;
+		overflow: hidden;
+		margin-top: 7px;
+	}
+
+	header .burger .line1,
+	header .burger .line2,
+	header .burger .line3{
+		width: 35px;
+		background-color:black;
+		height: 2px;
+		border-radius: 30px;
+		margin-top: 10px;
+		transition: all 0.5s ease-in-out;
+	}
+
+	header .activate{
+		margin-top: -5px;
+	}
+
+	header .expand{
+		height: 400px;
+	}
+
+	header .activate .line1{
+		transform: rotate(125deg);
+		margin-top: 35px;
+	}
+	header .activate .line2{
+		transform: translateY(-2000px);
+	}
+	header .activate .line3{
+		transform: rotate(45deg);
+		margin-top: -14px;
+	}
+
+}
+
+@media only screen and (max-width:533px){
+	header .burger{
+		margin-left: 36%;
+	}
+}

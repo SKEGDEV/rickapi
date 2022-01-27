@@ -1,0 +1,18 @@
+.home-container{
+	text-align: center;
+	border: 4px solid;
+	border-color: #10b0c9;
+	border-radius: 10px;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.home-container h1{
+	font-size: 50px;
+}
+
+.home-container p{
+	width: 80%;
+	margin-left: 10%;
+	font-size: 25px;
+}

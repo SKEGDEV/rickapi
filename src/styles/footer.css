@@ -1,0 +1,84 @@
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	height: 70px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+footer .follow{
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+footer .icon{
+	margin-left: 20px;
+	margin-top: 25px;
+	cursor: pointer;
+	font-size: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+footer .icon:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	border-radius: 5px;
+}
+
+footer .facebook{
+	color: #3b5998;
+}
+
+footer .instagram{
+	color: #8a3ab9;
+}
+
+footer .whatsapp{
+	color: #4ac959;
+}
+
+footer .footer-logo{
+	width: 90px;
+	height: 60px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	margin-top: 5px;
+}
+
+footer .footer-logo:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	border-radius: 10px;
+}
+
+footer .powered-by{	
+	margin-left: 60%;
+	margin-top: 25px;
+	margin-right: 20px;
+}
+
+@media only screen and (max-width:900px){
+	footer .powered-by{
+		margin-left: 40%;
+	}
+}
+
+@media only screen and (max-width:600px){
+	footer .powered-by{
+		margin-left: 15%;
+	}
+	footer .icon{
+		font-size: 15px;
+		margin-top: 30px;
+		margin-left: 15px;
+	}
+
+	footer .footer-logo{
+		width: 65px;
+		height: 45px;
+		margin-top: 15px;
+	}
+	footer .follow{
+		margin-left: 5px;
+	}
+}
+
