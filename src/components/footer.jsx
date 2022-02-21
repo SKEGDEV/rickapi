@@ -23,7 +23,7 @@ export default function Footer(){
 				<RiWhatsappFill className="icon whatsapp"/>
 				</a>
 			<p className="powered-by">Powered by:</p>
-			<img className="footer-logo" src={logoedu} alt="caducated" />
+			<a href="http://SKEGDEV.github.io/portfolio-work" target="_blank"><img className="footer-logo" src={logoedu} alt="caducated" /></a>
 		</footer>
 	) 
 }
